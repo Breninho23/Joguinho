@@ -2032,6 +2032,7 @@ var wordList = ['algoz',
 var word = wordList[Math.floor(Math.random() * wordList.length)].toUpperCase();
 console.log(word);
 
+/*
 const fetchDica = async (dica) => {
     var APIResponse = await fetch(`https://significado.herokuapp.com/v2/${dica}`);
     if (APIResponse.status === 200) {
@@ -2045,6 +2046,7 @@ const fetchDica = async (dica) => {
         return await fetchDica(word);
     }
   }
+  */
 
 
 window.onload =  function () {
@@ -2053,11 +2055,13 @@ window.onload =  function () {
 
 
 intialize = async () => {
+    /*
     const data = await fetchDica(word);
     if(data != null){
         document.getElementById("dicaP").innerText = data[0]['meanings'][0];
         console.log(data[0]['meanings'][0])
-    }    
+    }   
+    */ 
     // Criação do tabuleiro
     for (let r = 0; r < height; r++) {
         for (let c = 0; c < width; c++) {
